@@ -1,0 +1,86 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Fokus Docs",
+  "colors": {
+    "primary": "#D4174A",
+    "light": "#F26B8F",
+    "dark": "#9C0F35"
+  },
+  "favicon": {
+    "light": "/images/Rectangle.png",
+    "dark": "/images/Rectangle.png"
+  },
+  "navigation": {
+    "pages": [
+      {
+        "group": "Getting Started",
+        "pages": [
+          "index",
+          "quickstart"
+        ]
+      }
+    ],
+    "groups": [
+      {
+        "group": "Get Started",
+        "pages": [
+          "index"
+        ]
+      },
+      {
+        "group": "Selling your photos",
+        "pages": [
+          "distributing-with-coupons"
+        ],
+        "icon": "money-bill"
+      },
+      {
+        "group": "Getting paid",
+        "pages": [
+          "pending-vs-available",
+          "kyc-verification",
+          "request-a-withdrawal"
+        ],
+        "icon": "100"
+      }
+    ]
+  },
+  "logo": {
+    "light": "/images/Rectangle.png",
+    "dark": "/images/Rectangle.png",
+    "href": "https://fokus.ph/"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:support@fokus.ph"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://app.mintlify.com"
+    }
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
+  },
+  "footer": {
+    "socials": {
+      "facebook": "https://www.facebook.com/fokusph",
+      "website": "https://fokus.ph/"
+    }
+  },
+  "description": "Help and documentation for Fokus photographers and customers."
+}

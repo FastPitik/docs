@@ -1,0 +1,97 @@
+---
+title: "Pending vs available balance"
+description: "Why your sales sit pending first, and when they become available to withdraw."
+---
+
+When a customer buys one of your photos, the money does not land in your **available** balance right away. It first appears in a separate **pending** balance and stays there until the platform releases it. This page explains why, and what the two lanes mean for your cash flow.
+
+## **The two-lane ledger**
+
+Fokus tracks your earnings with a two‑lane system:
+
+| **Lane** | **What it means** |
+| :-- | :-- |
+| **Pending balance** | Sales that have been confirmed but not yet released |
+| **Available balance** | Funds you can withdraw right now |
+
+Both figures are visible at the top of your **Finances** page in Fokus Studio.
+
+## **Why money goes to pending first**
+
+Every time a customer's payment is confirmed, we record a **sale** entry in your ledger and add the amount to your pending balance. The funds sit in pending for a few reasons:
+
+- **Refund and dispute window.** Customers can raise disputes shortly after purchase. Holding funds in pending gives us time to handle any chargebacks before money reaches your withdrawable balance.
+- **Payment settlement.** Payments are processed through PayMongo and typically take a few banking days to fully settle. Pending is where we wait for that.
+- **Partner commission.** If your collection has a **distribution partner**, their cut is calculated during this window.
+
+## When does my payout become available?
+
+Payouts run on a weekly cycle with a hard **cutoff of Tuesday at 5:00 PM**. Everything a customer pays you between one Tuesday 5:00 PM and the next is bundled into a single payout that's **available to withdraw the following Friday**.
+
+<Info>
+  All cutoff times follow Philippine timezone. A `4:59 PM` payment makes the cycle; `5:00 PM` exactly does not.
+</Info>
+
+The table below traces one full cycle — the payout releasing on **Friday, June 12**. Note that payments from the **previous** weekend still land in this payout, while payments from **this** week after the cutoff roll to the next one.
+
+| Customer paid at | In the June 12 payout? | Available to withdraw |
+| --- | --- | --- |
+| Mon, Jun 1 · 2:00 PM | ⏮️ Earlier cycle | Fri, Jun 5 |
+| Tue, Jun 2 · 11:00 AM | ⏮️ Earlier cycle | Fri, Jun 5 |
+| Tue, Jun 2 · 4:59 PM | ⏮️ Earlier cycle | Fri, Jun 5 |
+| **Tue, Jun 2 · 5:00 PM** | ✅ Cycle opens | **Fri, Jun 12** |
+| Wed, Jun 3 · 9:00 AM | ✅ Included | Fri, Jun 12 |
+| Sat, Jun 6 · 3:00 PM _(prev week)_ | ✅ Included | Fri, Jun 12 |
+| Sun, Jun 7 · 8:00 PM _(prev week)_ | ✅ Included | Fri, Jun 12 |
+| Mon, Jun 8 · 2:00 PM | ✅ Included | Fri, Jun 12 |
+| Tue, Jun 9 · 11:00 AM | ✅ Included | Fri, Jun 12 |
+| **Tue, Jun 9 · 4:59 PM** | ✅ Included _(just in time)_ | **Fri, Jun 12** |
+| **Tue, Jun 9 · 5:00 PM** | ❌ Cycle closes | Fri, Jun 19 |
+| Tue, Jun 9 · 8:00 PM | ❌ Rolls over | Fri, Jun 19 |
+| Wed, Jun 10 · 9:00 AM | ❌ Rolls over | Fri, Jun 19 |
+| Sat, Jun 13 · 3:00 PM _(this week)_ | ❌ Rolls over | Fri, Jun 19 |
+| Sun, Jun 14 · 8:00 PM _(this week)_ | ❌ Rolls over | Fri, Jun 19 |
+| Mon, Jun 15 · 9:00 AM | ❌ Rolls over | Fri, Jun 19 |
+
+<Warning>
+  **Tuesday 5:00 PM is the line.** Payments at exactly 5:00 PM or later belong to the _next_ cycle and release the following Friday — not this one.
+</Warning>
+
+<Accordion title="The rule for any week">
+  - **Cutoff** — every Tuesday at 5:00 PM.
+  - **A payout includes** — everything paid from the _previous_ Tuesday 5:00 PM up to (but not including) _this_ Tuesday 5:00 PM.
+  - **Release** — that payout is available to withdraw on the Friday of the same week as the cutoff.
+</Accordion>
+
+### **Why the cutoff exists**
+
+Our payment processor runs a weekly settlement window that closes Tuesday at 5:00 PM. After the cutoff:
+
+1. PayMongo finalises that week's batch.
+2. Funds settle to our merchant bank by the end of the same week.
+3. We release the settled funds to your _available_ balance on Friday.
+
+Sales received after Tuesday 5:00 PM aren't lost — they're safely recorded in your _pending_ balance and join the next week's batch.
+
+## **What a release does to your ledger**
+
+When the weekly release runs:
+
+- Your **pending balance** decreases by the released amount.
+- Your **available balance** increases by the same amount.
+- A `Release` entry appears in your transaction history with the date.
+
+You can see all four balances at the top of **Finances**:
+
+| **Card** | **What it shows** |
+| :-- | :-- |
+| **Pending Balance** | Money in flight, queued for the next Friday release |
+| **Available for Withdrawal** | What you can request to withdraw right now |
+| **Total Earnings** | Lifetime sum of all sale credits |
+| **Total Withdrawn** | Lifetime payouts |
+
+## **Next step**
+
+<Card title="Request a withdrawal" icon="landmark" href="/request-a-withdrawal" cta="Proceed">
+  Move your available balance to your bank or e‑wallet.
+</Card>

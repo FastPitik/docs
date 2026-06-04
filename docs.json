@@ -29,6 +29,13 @@
         ]
       },
       {
+        "group": "Collections",
+        "icon": "album",
+        "pages": [
+          "untitled-page"
+        ]
+      },
+      {
         "group": "Selling your photos",
         "pages": [
           "distributing-with-coupons"

@@ -47,7 +47,8 @@
         "pages": [
           "pending-vs-available",
           "kyc-verification",
-          "request-a-withdrawal"
+          "request-a-withdrawal",
+          "receiving-tips"
         ],
         "icon": "100"
       }
